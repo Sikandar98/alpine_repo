@@ -1,13 +1,8 @@
-name: CI
-
-on: push
-
+name: Connecting to ec2 and run commands
+on: [push]
 jobs:
-  build:
+  Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: echo "Hello, worldhhh"
+      - run: ssh -i "Newkey.pem" ec2-user@ec2-3-87-67-222.compute-1.amazonaws.com
+      

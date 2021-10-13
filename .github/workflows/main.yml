@@ -4,5 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: ls
       - run: ssh -i "Newkey.pem" ec2-user@ec2-3-87-67-222.compute-1.amazonaws.com
+      - run: ls
       

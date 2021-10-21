@@ -33,6 +33,7 @@ jobs:
       - run: pwd
       - run: touch hello
       - run: python file.py
+      - run: env
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script

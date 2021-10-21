@@ -20,6 +20,6 @@ jobs:
     steps:
         - name: example workflow encrypted variable
           run:
-             ${{ secrets.FIRSTNAME }}
+            echo ${{ secrets.FIRSTNAME }}
         
          

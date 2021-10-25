@@ -21,8 +21,8 @@ jobs:
         - name: example workflow encrypted variable
           run:
             echo ${{ secrets.FIRSTNAME }}
-            touch example_file
-            cp FIRSTNAME example_file
+            echo touch example_file
+            echo cp FIRSTNAME example_file
             
         
          

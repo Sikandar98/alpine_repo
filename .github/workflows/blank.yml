@@ -23,6 +23,7 @@ jobs:
             echo ${{ secrets.FIRSTNAME }}
             echo touch example_file
             echo cp FIRSTNAME example_file
+            echo cat example_file
             
         
          
